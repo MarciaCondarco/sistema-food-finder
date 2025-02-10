@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilUsuario));
             this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
@@ -40,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelCadastrarUsuario = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -138,14 +138,23 @@
             this.buttonCadastrar.Text = "Salvar";
             this.buttonCadastrar.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(458, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 29);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Escolher Foto";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(313, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(326, 73);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(113, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
             // PerfilUsuario
@@ -154,6 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBoxCPF);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.buttonLogin);
@@ -187,6 +197,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelCadastrarUsuario;
         private System.Windows.Forms.Button buttonCadastrar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

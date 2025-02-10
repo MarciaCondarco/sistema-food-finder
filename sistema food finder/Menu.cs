@@ -34,5 +34,11 @@ namespace sistema_food_finder
             Form1 form = new Form1();
             form.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PerfilUsuario form = new PerfilUsuario();
+            form.ShowDialog();
+        }
     }
 }

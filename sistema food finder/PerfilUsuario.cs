@@ -26,5 +26,22 @@ namespace sistema_food_finder
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do OpenFileDialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Defina o filtro para mostrar apenas arquivos de imagem
+            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+
+            // Verifica se o usuário selecionou um arquivo
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Exibe a imagem selecionada no PictureBox
+                pictureBox1.Image = new System.Drawing.Bitmap(openFileDialog.FileName);
+            }
+        }
     }
+    
 }
